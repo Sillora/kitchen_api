@@ -1,0 +1,313 @@
+# =========================================================
+# .gitignore — Template Lengkap & Profesional
+# =========================================================
+# Catatan:
+# - Jangan commit file rahasia seperti .env
+# - Lockfile seperti package-lock.json, yarn.lock, pnpm-lock.yaml,
+#   composer.lock, poetry.lock, Cargo.lock, go.sum, pubspec.lock
+#   untuk aplikasi biasanya TETAP di-commit.
+# - Sesuaikan dengan stack proyek kamu.
+# =========================================================
+
+# =========================================================
+# 1. Secrets, Environment & Certificates
+# =========================================================
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.secret
+secrets/
+
+# =========================================================
+# 2. Dependency / Library
+# =========================================================
+node_modules/
+bower_components/
+jspm_packages/
+
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+vendor/
+# Catatan: hapus "vendor/" jika proyek kamu memang commit vendor
+# (misalnya beberapa proyek Go/PHP tertentu).
+
+venv/
+.venv/
+env/
+ENV/
+.eggs/
+*.egg-info/
+
+# =========================================================
+# 3. Build Output & Compiled Files
+# =========================================================
+dist/
+build/
+out/
+target/
+.gradle/
+bin/
+obj/
+
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.pdb
+*.lib
+*.a
+
+*.apk
+*.aab
+*.ipa
+*.dSYM/
+*.dSYM.zip
+
+# =========================================================
+# 4. Logs & Debug
+# =========================================================
+logs/*
+!logs/.gitkeep
+*.log
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================================================
+# 5. Cache & Framework Cache
+# =========================================================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.vercel/
+.netlify/
+.eslintcache
+.stylelintcache
+
+# =========================================================
+# 6. Testing, Coverage & Type Checker Cache
+# =========================================================
+coverage/
+.nyc_output/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# =========================================================
+# 7. Python
+# =========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.pyo
+
+# =========================================================
+# 8. Java / Kotlin / Gradle / Maven
+# =========================================================
+.gradle/
+target/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# =========================================================
+# 9. .NET / C#
+# =========================================================
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+TestResults/
+*.nupkg
+
+# =========================================================
+# 10. Go
+# =========================================================
+/bin/
+*.test
+*.out
+
+# =========================================================
+# 11. Rust
+# =========================================================
+target/
+
+# =========================================================
+# 12. PHP / Laravel
+# =========================================================
+/vendor/
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/logs/*
+!/storage/logs/.gitignore
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# =========================================================
+# 13. Ruby / Rails
+# =========================================================
+/.bundle/
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+/public/uploads/
+
+# =========================================================
+# 14. Dart / Flutter
+# =========================================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# =========================================================
+# 15. Swift / Xcode
+# =========================================================
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+Pods/
+Carthage/Build/
+
+# =========================================================
+# 16. Elixir
+# =========================================================
+/_build/
+/deps/
+*.beam
+erl_crash.dump
+elixir_ls/
+
+# =========================================================
+# 17. Terraform
+# =========================================================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!*.tfvars.example
+
+# =========================================================
+# 18. Database & Local Data
+# =========================================================
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.mdb
+*.accdb
+
+# =========================================================
+# 19. Upload / Media / Temporary
+# =========================================================
+uploads/
+media/
+public/uploads/
+storage/app/public/
+
+tmp/
+temp/
+.tmp/
+
+# =========================================================
+# 20. IDE / Editor
+# =========================================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+*.ipr
+*.iws
+.history/
+
+# =========================================================
+# 21. OS
+# =========================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================================================
+# 22. Backup, Swap & File Sementara
+# =========================================================
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+*.pid
+*.seed
+*.pid.lock
